@@ -59,7 +59,7 @@ const AIChatPanel = ({ onClose }) => {
 
         try {
             const res = await axios.post(
-                "http://localhost:8000/ai/ask",
+                "https://rory-backend-dwdu.onrender.com/ai/ask",
                 {
                     question: input, // ✅ body
                 },

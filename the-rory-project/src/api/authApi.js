@@ -1,5 +1,5 @@
 import { authHeader } from "../auth/authHeader";
-const BASE_URL = "http://localhost:8000/auth";
+const BASE_URL = "https://rory-backend-dwdu.onrender.com/auth";
 
 export const loginUser = async (email, password) => {
     const res = await fetch(`${BASE_URL}/login`, {

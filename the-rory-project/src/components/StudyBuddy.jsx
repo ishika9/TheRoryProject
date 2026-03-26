@@ -17,11 +17,17 @@ const StudyBuddy = () => {
         if (!question.trim()) return;
 
         setLoading(true);
-        const res = await fetch("http://localhost:8000/ai/ask", {
-            method: "POST",
-            headers: { "Content-Type": "application/json", ...authHeader() },
-            body: JSON.stringify({ question }),
-        });
+        const res = await fetch(
+            "https://rory-backend-dwdu.onrender.com/ai/ask",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    ...authHeader(),
+                },
+                body: JSON.stringify({ question }),
+            }
+        );
 
         const data = await res.json();
         setAnswer(data.answer);

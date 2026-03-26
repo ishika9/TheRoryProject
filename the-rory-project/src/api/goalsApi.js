@@ -1,5 +1,5 @@
 import { authHeader } from "../auth/authHeader";
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://rory-backend-dwdu.onrender.com";
 
 export const fetchGoals = async () => {
     const res = await fetch(`${API_BASE}/goals/`, {
@@ -43,4 +43,3 @@ export const deleteGoal = async (goalId) => {
     if (!res.ok) throw new Error("Failed to delete goal");
     return res.json();
 };
-

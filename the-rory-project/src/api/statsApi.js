@@ -1,6 +1,6 @@
 import { authHeader } from "../auth/authHeader";
 
-const BASE_URL = "http://localhost:8000/study";
+const BASE_URL = "https://rory-backend-dwdu.onrender.com/study";
 
 export const fetchDailyStudyHours = async () => {
     const res = await fetch(`${BASE_URL}/daily`, {

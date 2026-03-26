@@ -1,6 +1,6 @@
 import { authHeader } from "../auth/authHeader";
 
-const BASE_URL = "http://localhost:8000/tasks";
+const BASE_URL = "https://rory-backend-dwdu.onrender.com/tasks";
 
 /* Get all tasks for a goal */
 export const fetchTasksByGoal = async (goalId) => {
