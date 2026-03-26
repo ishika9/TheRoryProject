@@ -22,4 +22,9 @@ app.include_router(study.router)
 app.include_router(ai.router)
 app.include_router(auth.router)
 
+@app.get("/")
+def root():
+    return {"message": "The Rory Project is live 🚀"}
+
+
 
