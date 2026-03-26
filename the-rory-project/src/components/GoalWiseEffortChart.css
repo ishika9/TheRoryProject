@@ -1,0 +1,69 @@
+/* Chart Card */
+.study-consistency-chart {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+    margin-top: 24px;
+}
+
+/* Chart title */
+.study-consistency-chart .MuiTypography-root {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* X & Y axis labels */
+.study-consistency-chart .recharts-cartesian-axis-tick-value {
+    fill: var(--text-muted);
+    font-size: 12px;
+}
+
+/* Axis lines */
+.study-consistency-chart .recharts-cartesian-axis-line,
+.study-consistency-chart .recharts-cartesian-axis-tick-line {
+    stroke: var(--border-light);
+}
+
+/* Grid lines (only applies if CartesianGrid is used) */
+.study-consistency-chart .recharts-cartesian-grid line {
+    stroke: var(--border-light);
+    stroke-dasharray: 3 3;
+}
+
+/* Bars */
+.study-consistency-chart .recharts-bar-rectangle {
+    fill: var(--primary);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover effect on bars */
+.study-consistency-chart .recharts-bar-rectangle:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* Tooltip container */
+.study-consistency-chart .recharts-tooltip-wrapper {
+    outline: none;
+}
+
+/* Tooltip box */
+.study-consistency-chart .recharts-default-tooltip {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-light) !important;
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Tooltip title */
+.study-consistency-chart .recharts-tooltip-label {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* Tooltip values */
+.study-consistency-chart .recharts-tooltip-item {
+    color: var(--secondary);
+    font-size: 13px;
+}

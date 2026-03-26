@@ -1,0 +1,161 @@
+/* Page layout */
+.goals-container {
+    margin-top: 2rem;
+}
+
+/* Generic card */
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Create Goal card */
+.create-goal-card {
+    border-left: 6px solid var(--primary);
+    padding-bottom: 8px;
+}
+
+.page-title {
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Inputs */
+.goal-input {
+    margin-bottom: 1rem !important;
+    /* height: 40px; */
+}
+
+/* Primary button */
+.primary-button {
+    background-color: var(--primary) !important;
+    text-transform: none !important;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.primary-button:hover {
+    background-color: var(--secondary) !important;
+}
+
+/* Goals list */
+.goal-list-item {
+    background: var(--card-bg);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 8px;
+    cursor: pointer;
+    border-left: 6px solid var(--primary);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.goal-list-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Goal title text */
+.goal-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.secondary-button {
+    background-color: transparent !important;
+    color: var(--primary) !important;
+    text-transform: none !important;
+    font-weight: 500;
+}
+
+.secondary-button:hover {
+    background-color: rgba(103, 89, 122, 0.08) !important;
+}
+
+.text-button {
+    color: var(--text-muted) !important;
+    text-transform: none !important;
+    font-weight: 400;
+}
+
+.text-button:hover {
+    color: var(--text-primary) !important;
+}
+
+.progress-wrapper {
+    width: 100%;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+/* Status colors */
+.progress-bar.on-track {
+    background-color: var(--success);
+}
+
+.progress-bar.at-risk {
+    background-color: var(--warning);
+}
+
+.progress-bar.over {
+    background-color: var(--danger);
+}
+
+.status-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+}
+
+/* Semantic colors */
+.status-badge.on-track {
+    background: rgba(133, 186, 161, 0.2);
+    color: var(--success);
+}
+
+.status-badge.at-risk {
+    background: rgba(240, 201, 135, 0.25);
+    color: #9a6b00;
+}
+
+.status-badge.over {
+    background: rgba(201, 122, 122, 0.25);
+    color: var(--danger);
+}
+
+.badge {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 8px;
+}
+
+.badge.urgent {
+    background-color: rgba(240, 201, 135, 0.25);
+    color: #856404;
+}
+
+.badge.overdue {
+    background-color: rgba(201, 122, 122, 0.25);
+    color: #a10000;
+}
+
+.goal-completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+}

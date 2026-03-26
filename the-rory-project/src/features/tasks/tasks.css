@@ -1,0 +1,103 @@
+.tasks-container {
+    margin-top: 2rem;
+}
+
+/* Card-like task items */
+.MuiListItem-root {
+    background: var(--card-bg);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+    border-left: 6px solid var(--primary);
+}
+
+/* Progress bars */
+.task-progress-wrapper,
+.goal-progress-wrapper,
+.task-completed {
+    width: 100%;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.task-progress-bar,
+.goal-progress-bar {
+    height: 100%;
+    transition: width 0.3s ease;
+    background-color: var(--success);
+}
+
+.task-completed {
+    height: 100%;
+    color: rgba(133, 186, 161);
+}
+
+/* Semantic colors */
+.task-progress-bar.on-track,
+.goal-progress-bar.on-track {
+    background-color: var(--success);
+}
+
+.task-progress-bar.at-risk,
+.goal-progress-bar.at-risk {
+    background-color: var(--warning);
+}
+
+.task-progress-bar.over,
+.goal-progress-bar.over {
+    background-color: var(--danger);
+}
+
+/* Status badge */
+.status-badge {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.status-badge.on-track {
+    background: rgba(133, 186, 161, 0.25);
+    color: var(--success);
+}
+
+.status-badge.at-risk {
+    background: rgba(240, 201, 135, 0.25);
+    color: #8a5a00;
+}
+
+.status-badge.over {
+    background: rgba(201, 122, 122, 0.25);
+    color: var(--danger);
+}
+
+.status-badge.completed {
+    color: rgba(133, 186, 161);
+    font-weight: 600;
+}
+
+/* Buttons */
+.text-button {
+    color: var(--text-muted) !important;
+    text-transform: none !important;
+}
+
+.text-button:hover {
+    color: var(--text-primary) !important;
+}
+
+/* Primary button */
+.primary-button {
+    background-color: var(--primary) !important;
+    text-transform: none !important;
+    font-weight: 500;
+}
+
+.primary-button:hover {
+    background-color: var(--secondary) !important;
+}

@@ -1,0 +1,68 @@
+/* Pie Chart Card */
+.goal-effort-pie-chart {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+    margin-top: 24px;
+}
+
+/* Chart title */
+.goal-effort-pie-chart .MuiTypography-root {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Empty state text */
+.goal-effort-pie-chart .MuiTypography-body2 {
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
+/* Pie slices */
+.goal-effort-pie-chart .recharts-pie-sector path {
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform-origin: center;
+}
+
+/* Hover effect on slices */
+.goal-effort-pie-chart .recharts-pie-sector:hover path {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+/* Pie labels */
+.goal-effort-pie-chart .recharts-pie-label-text {
+    fill: var(--text-primary);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Tooltip wrapper */
+.goal-effort-pie-chart .recharts-tooltip-wrapper {
+    outline: none;
+}
+
+/* Tooltip box */
+.goal-effort-pie-chart .recharts-default-tooltip {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-light) !important;
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Tooltip label (goal title) */
+.goal-effort-pie-chart .recharts-tooltip-label {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* Tooltip value text */
+.goal-effort-pie-chart .recharts-tooltip-item {
+    color: var(--secondary);
+    font-size: 13px;
+}
+
+.goal-effort-pie-chart .recharts-active-shape path {
+    filter: brightness(1.05);
+}

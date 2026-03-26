@@ -1,0 +1,20 @@
+.app-header {
+    background-color: var(--primary) !important;
+    box-shadow: none !important;
+}
+
+.app-title {
+    flex-grow: 1;
+    font-weight: 600;
+}
+
+.nav-button {
+    color: rgba(255, 255, 255, 0.85) !important;
+    text-transform: none !important;
+    font-weight: 500;
+    padding: 0 !important;
+}
+
+.nav-button:hover {
+    color: white !important;
+}

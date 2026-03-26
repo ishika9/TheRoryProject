@@ -1,0 +1,19 @@
+:root {
+    /* Brand Colors */
+    --primary: #67597a; /* Dusty Lavender */
+    --secondary: #544e61; /* Vintage Grape */
+
+    /* Text */
+    --text-primary: #544e61;
+    --text-muted: #6e8894;
+
+    /* Surfaces */
+    --background: #f8f6fd;
+    --card-bg: #ffffff;
+    --border-light: rgba(0, 0, 0, 0.08);
+
+    /* Status */
+    --success: #85baa1;
+    --warning: #f0c987;
+    --danger: #c97a7a;
+}
