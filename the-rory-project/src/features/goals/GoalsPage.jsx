@@ -42,18 +42,7 @@ const GoalsPage = () => {
             setdue_date("");
         }
     };
-    const goalsWithStatus = goals.map((goal) => {
-        const goalTasks = tasks.filter((task) => task.goalId === goal.id);
 
-        const isCompleted =
-            goalTasks.length > 0 &&
-            goalTasks.every((task) => task.status === "completed");
-
-        return {
-            ...goal,
-            status: isCompleted ? "completed" : "active",
-        };
-    });
     const getUrgency = (due_date) => {
         if (!due_date) return "none";
 

@@ -8,7 +8,7 @@ import {
     ResponsiveContainer,
 } from "recharts";
 import { fetchGoalWiseEffort } from "../api/statsApi";
-import { Card, CardContent, Paper, Typography } from "@mui/material";
+import { Card, CardContent, Typography } from "@mui/material";
 import "./GoalWiseEffortChart.css";
 
 const GoalWiseEffortChart = () => {

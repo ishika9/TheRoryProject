@@ -25,7 +25,6 @@ import {
     MenuItem,
     Box,
     Typography,
-    LinearProgress,
 } from "@mui/material";
 
 const TasksPage = () => {
@@ -54,9 +53,6 @@ const TasksPage = () => {
     const totalPlanned = tasks.reduce((sum, task) => sum + task.plannedTime, 0);
 
     const totalActual = tasks.reduce((sum, task) => sum + task.timeSpent, 0);
-
-    const planAccuracy =
-        totalPlanned === 0 ? 0 : Math.round((totalActual / totalPlanned) * 100);
 
     const completedCount = tasks.filter((t) => t.status === "completed").length;
     const progressPercent =

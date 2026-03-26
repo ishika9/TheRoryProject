@@ -13,7 +13,6 @@ import {
     CardContent,
     LinearProgress,
 } from "@mui/material";
-import StudyBuddy from "../components/StudyBuddy";
 import AIFloatingButton from "../components/ai/AIFloatingButton";
 import GoalWiseEffortChart from "../components/GoalWiseEffortChart";
 
@@ -133,11 +132,6 @@ const Dashboard = () => {
     const currentStreak = calculateCurrentStreak(studyData);
     const longestStreak = calculateLongestStreak(studyData);
     const avgDailyTime = calculateAverageDailyTime(studyData);
-
-    const planningAccuracy =
-        totalPlannedTime === 0
-            ? 0
-            : Math.round((totalTimeSpent / totalPlannedTime) * 100);
 
     return (
         <>
